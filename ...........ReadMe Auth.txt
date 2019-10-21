@@ -1,0 +1,64 @@
+============LARAVEL AUTH=============
+
+-> composer require laravel/ui --dev
+
+
+-> php artisan ui:auth  xxxx
+
+
+-> php artisan migrate  xxxx
+
+
+-> php artisan ui bootstrap
+
+
+-> npm install
+
+
+
+-->How to add extra field while register AUTH
+http://techiescircle.com/add-extra-fields-laravel-5-registration-form/
+
+
+-->Login Through Email and username
+https://tutsforweb.com/laravel-auth-login-email-username-one-field/
+
+
+-> Add extra page for login verify
+
+Route::get('/contact', function () {
+    return view('contact');
+})->middleware('auth');  
+
+
+---> Verify email
+https://www.youtube.com/watch?v=Ltan-Ywn7Ks
+https://www.webslesson.info/2019/04/login-registration-system-with-email-verification-in-laravel-58.html
+
+
+turn on gmail
+Less secure app access
+
+
+-> Email settings
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=pcgameshopbbsr@gmail.com
+MAIL_PASSWORD=gurubaba@123
+MAIL_ENCRYPTION=tls
+
+
+
+->Beautymail
+https://justlaravel.com/send-beautiful-html-mail-laravel-beautymail/
+https://github.com/Snowfire/Beautymail
+
+->How to use beautymail inside controller
+https://stackoverflow.com/questions/36732746/cant-get-beautymail-to-work-for-laravel-5-2
+(
+use Snowfire\Beautymail\Beautymail;
+*Note the \ before Snowfire\Beautymail\Beautymail::class.
+$beautymail = app()->make(\Snowfire\Beautymail\Beautymail::class);
+)
+

@@ -1,0 +1,15 @@
+cd
+ls
+dir
+composer require laravel/ui --dev
+php artisan ui:auth
+npm install
+php artisan ui bootstrap
+npm init
+npm run watch
+npm run dev
+php artisan migrate
+php artisan key:generate
+" composer require snowfire/beautymail dev-master
+composer require snowfire/beautymail dev-master
+php artisan vendor:publish --provider="Snowfire\Beautymail\BeautymailServiceProvider"
